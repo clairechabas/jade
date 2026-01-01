@@ -1,0 +1,9 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "check-types": { "dependsOn": ["^check-types"] },
+    "format": { "dependsOn": ["^format"] },
+    "lint": { "dependsOn": ["^lint"] },
+    "tests": { "dependsOn": ["^tests"] }
+  }
+}
