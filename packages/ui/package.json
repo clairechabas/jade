@@ -1,0 +1,28 @@
+{
+  "name": "@bml/ui",
+  "version": "1.0.0",
+  "description": "The design system used to compose the application interface.",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "ui",
+    "components",
+    "design-system",
+    "react",
+    "shadcn-ui",
+    "storybook"
+  ],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@bml/eslint-config": "workspace:*",
+    "@bml/typescript-config": "workspace:*",
+    "vite": "^7.3.0"
+  }
+}

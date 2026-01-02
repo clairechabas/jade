@@ -1,0 +1,18 @@
+{
+  "name": "@bml/tests-e2e",
+  "version": "1.0.0",
+  "description": "E2E browser tests for the Bookmark Library application.",
+  "scripts": {
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@bml/typescript-config": "workspace:*",
+    "@bml/eslint-config": "workspace:*"
+  }
+}

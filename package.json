@@ -7,7 +7,9 @@
   "scripts": {
     "check-types": "turbo run check-types",
     "format": "turbo run format --continue",
+    "format:root": "prettier -w .",
     "lint": "turbo run lint --continue",
+    "lint:root": "eslint .",
     "tests": "turbo run tests"
   },
   "keywords": [
@@ -23,7 +25,15 @@
   "license": "ISC",
   "packageManager": "pnpm@10.14.0",
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^25.0.3",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.26",
     "prettier": "^3.7.4",
-    "turbo": "^2.7.2"
+    "turbo": "^2.7.2",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.51.0"
   }
 }

@@ -1,0 +1,22 @@
+{
+  "name": "@bml/api",
+  "version": "1.0.0",
+  "description": "The API powering the Bookmark Library application.",
+  "main": "index.ts",
+  "scripts": {
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "api",
+    "backend"
+  ],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@bml/typescript-config": "workspace:*",
+    "@bml/eslint-config": "workspace:*"
+  }
+}

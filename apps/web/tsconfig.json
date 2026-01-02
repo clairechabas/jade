@@ -1,0 +1,10 @@
+{
+  "extends": "@bml/typescript-config/react.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["vite/client"],
+    "baseUrl": "."
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "*.ts", "*.tsx"],
+  "exclude": ["node_modules", "dist", "build"]
+}

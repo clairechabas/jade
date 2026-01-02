@@ -1,0 +1,23 @@
+{
+  "name": "@bml/api-client",
+  "version": "1.0.0",
+  "description": "API client providing data schemas and API types.",
+  "scripts": {
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "api-client",
+    "data",
+    "schemas",
+    "types"
+  ],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@bml/typescript-config": "workspace:*",
+    "@bml/eslint-config": "workspace:*"
+  }
+}

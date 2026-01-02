@@ -1,0 +1,24 @@
+{
+  "name": "@bml/css-config",
+  "version": "1.0.0",
+  "description": "Shared CSS configuration and theme for the frontend components of the monorepo.",
+  "main": "index.css",
+  "scripts": {
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "css",
+    "config",
+    "shared",
+    "monorepo"
+  ],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@bml/typescript-config": "workspace:*",
+    "@bml/eslint-config": "workspace:*"
+  }
+}

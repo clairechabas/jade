@@ -1,0 +1,7 @@
+{
+  "extends": "@bml/typescript-config/base.json",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["*.ts", "src/**/*.ts"]
+}

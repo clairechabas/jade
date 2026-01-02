@@ -1,0 +1,22 @@
+{
+  "name": "@bml/typescript-config",
+  "version": "1.0.0",
+  "description": "Shared TypeScript configuration for the monorepo.",
+  "private": true,
+  "files": [
+    "*.json"
+  ],
+  "scripts": {
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "typescript",
+    "config",
+    "shared",
+    "monorepo"
+  ],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0"
+}

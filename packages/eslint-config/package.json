@@ -1,0 +1,20 @@
+{
+  "name": "@bml/eslint-config",
+  "version": "1.0.0",
+  "description": "Shared ESLint configuration for the monorepo.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "shared",
+    "monorepo"
+  ],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0"
+}

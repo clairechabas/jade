@@ -1,0 +1,25 @@
+{
+  "name": "@bml/web",
+  "version": "1.0.0",
+  "description": "The web frontend application for the Bookmark Library.",
+  "main": "index.tsx",
+  "scripts": {
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "web",
+    "frontend",
+    "vite",
+    "react"
+  ],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@bml/eslint-config": "workspace:*",
+    "@bml/typescript-config": "workspace:*",
+    "vite": "^7.3.0"
+  }
+}
