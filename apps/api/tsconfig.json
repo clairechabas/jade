@@ -5,6 +5,6 @@
     "types": ["node"],
     "baseUrl": "."
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "*.ts", "*.tsx"],
-  "exclude": ["node_modules", "dist", "build"]
+  "include": ["src/**/*.ts", "*.ts"],
+  "exclude": ["node_modules", "dist", "build", "coverage"]
 }
