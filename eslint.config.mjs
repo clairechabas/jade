@@ -1,4 +1,4 @@
-import base from './packages/eslint-config/index.js';
+import { base } from './packages/eslint-config/index.mjs';
 
 export default [
   // Ignore build and output directories

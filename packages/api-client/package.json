@@ -6,7 +6,6 @@
     ".": "./src/index.ts"
   },
   "private": true,
-  "type": "module",
   "scripts": {
     "check-types": "tsc -p tsconfig.json --noEmit",
     "format": "prettier -w .",

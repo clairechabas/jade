@@ -2,9 +2,10 @@
   "name": "@bml/eslint-config",
   "version": "1.0.0",
   "description": "Shared ESLint configuration for the monorepo.",
-  "main": "index.js",
+  "main": "index.mjs",
   "private": true,
   "scripts": {
+    "check-types": "echo \"(skip eslint-config)\"",
     "format": "prettier -w .",
     "lint": "eslint . --fix"
   },

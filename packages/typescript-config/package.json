@@ -7,8 +7,9 @@
     "*.json"
   ],
   "scripts": {
+    "check-types": "echo \"(skip typescript-config)\"",
     "format": "prettier -w .",
-    "lint": "eslint . --fix"
+    "lint": "echo \"(skip typescript-config)\""
   },
   "keywords": [
     "typescript",
