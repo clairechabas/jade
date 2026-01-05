@@ -1,0 +1,24 @@
+{
+  "name": "@bml/typescript-utils",
+  "version": "1.0.0",
+  "description": "Shared Typescript helpers and utilities.",
+  "main": "./src/index.ts",
+  "private": true,
+  "scripts": {
+    "check-types": "tsc -p tsconfig.json --noEmit",
+    "format": "prettier -w .",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "typescript",
+    "utils",
+    "helpers"
+  ],
+  "author": "clairechabas",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "devDependencies": {
+    "@bml/eslint-config": "workspace:*",
+    "@bml/typescript-config": "workspace:*"
+  }
+}

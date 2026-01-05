@@ -34,6 +34,7 @@
   "material-icon-theme.folders.associations": {
     "api-client": "api",
     "typescript-config": "typescript",
+    "typescript-utils": "typescript",
     "eslint-config": "eslint",
     "css-config": "css",
     "tests-e2e": "test",
@@ -41,12 +42,7 @@
   },
   // ESLint settings
   "eslint.enable": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },

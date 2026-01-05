@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "The web frontend application for the Bookmark Library.",
   "main": "index.tsx",
+  "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "check-types": "tsc -p tsconfig.json --noEmit",
     "format": "prettier -w .",
     "lint": "eslint . --fix"
@@ -20,6 +24,18 @@
   "devDependencies": {
     "@bml/eslint-config": "workspace:*",
     "@bml/typescript-config": "workspace:*",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "typescript": "^5.9.3",
     "vite": "^7.3.0"
+  },
+  "dependencies": {
+    "@bml/api-client": "workspace:*",
+    "@bml/typescript-utils": "workspace:*",
+    "@tanstack/react-query": "^5.90.16",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router-dom": "^7.11.0"
   }
 }

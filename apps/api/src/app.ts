@@ -4,7 +4,7 @@ import { HealthResponseSchema } from '@bml/api-client';
 export function buildApp() {
   const app = Fastify({ logger: true });
 
-  app.get('/health', async () => {
+  app.get('/api/health', async () => {
     const payload = {
       ok: true,
       data: {
