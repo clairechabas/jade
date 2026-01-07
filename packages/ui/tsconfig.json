@@ -2,8 +2,7 @@
   "extends": "@bml/typescript-config/react.json",
   "compilerOptions": {
     "noEmit": true,
-    "composite": false,
-    "baseUrl": "."
+    "composite": false
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

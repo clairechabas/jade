@@ -5,6 +5,8 @@
   "main": "index.ts",
   "private": true,
   "scripts": {
+    "storybook": "pnpm exec storybook dev -p 6006",
+    "build-storybook": "pnpm exec storybook build",
     "check-types": "tsc -p tsconfig.json --noEmit",
     "format": "prettier -w .",
     "lint": "eslint . --fix"
@@ -23,6 +25,21 @@
   "devDependencies": {
     "@bml/eslint-config": "workspace:*",
     "@bml/typescript-config": "workspace:*",
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "8.6.15",
+    "@storybook/react-vite": "^8.6.14",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "clsx": "^2.1.1",
+    "storybook": "^8.6.14",
+    "tailwind-merge": "^3.4.0",
+    "typescript": "^5.9.3",
     "vite": "^7.3.0"
+  },
+  "dependencies": {
+    "@bml/css-config": "workspace:*",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   }
 }
