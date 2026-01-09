@@ -1,6 +1,5 @@
 import type { Preview } from '@storybook/react';
-
-import '@bml/css-config/styles.css';
+import '../src/styles.css';
 
 const preview: Preview = {
   parameters: {

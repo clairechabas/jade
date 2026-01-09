@@ -18,6 +18,5 @@
     "monorepo"
   ],
   "author": "clairechabas",
-  "license": "ISC",
-  "packageManager": "pnpm@10.14.0"
+  "license": "ISC"
 }

@@ -17,7 +17,6 @@
   ],
   "author": "clairechabas",
   "license": "ISC",
-  "packageManager": "pnpm@10.14.0",
   "devDependencies": {
     "@bml/eslint-config": "workspace:*",
     "@bml/typescript-config": "workspace:*",

@@ -75,6 +75,9 @@ importers:
       '@bml/typescript-utils':
         specifier: workspace:*
         version: link:../../packages/typescript-utils
+      '@bml/ui':
+        specifier: workspace:*
+        version: link:../../packages/ui
       '@tanstack/react-query':
         specifier: ^5.90.16
         version: 5.90.16(react@19.2.3)
@@ -129,17 +132,7 @@ importers:
         specifier: workspace:*
         version: link:../typescript-config
 
-  packages/css-config:
-    devDependencies:
-      '@bml/eslint-config':
-        specifier: workspace:*
-        version: link:../eslint-config
-      '@bml/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
-      tailwindcss:
-        specifier: ^4.1.18
-        version: 4.1.18
+  packages/css-config: {}
 
   packages/eslint-config: {}
 
@@ -208,6 +201,9 @@ importers:
       tailwind-merge:
         specifier: ^3.4.0
         version: 3.4.0
+      tailwindcss:
+        specifier: ^4.1.18
+        version: 4.1.18
       typescript:
         specifier: ^5.9.3
         version: 5.9.3

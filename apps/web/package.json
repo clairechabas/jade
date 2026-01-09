@@ -20,7 +20,6 @@
   ],
   "author": "clairechabas",
   "license": "ISC",
-  "packageManager": "pnpm@10.14.0",
   "devDependencies": {
     "@bml/eslint-config": "workspace:*",
     "@bml/typescript-config": "workspace:*",
@@ -36,6 +35,7 @@
     "@bml/api-client": "workspace:*",
     "@bml/css-config": "workspace:*",
     "@bml/typescript-utils": "workspace:*",
+    "@bml/ui": "workspace:*",
     "@tanstack/react-query": "^5.90.16",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",

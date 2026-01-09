@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import { keepPreviousData, QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { assertIsDefined } from '@bml/typescript-utils';
-import '@bml/css-config/styles.css';
+import './styles.css';
 import React from 'react';
 import { router } from './routes';
 

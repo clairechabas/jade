@@ -10,7 +10,6 @@
   "keywords": [],
   "author": "clairechabas",
   "license": "ISC",
-  "packageManager": "pnpm@10.14.0",
   "devDependencies": {
     "@bml/typescript-config": "workspace:*",
     "@bml/eslint-config": "workspace:*"

@@ -1,8 +1,9 @@
 import { HealthResponseSchema, type HealthResponse } from '@bml/api-client';
+import { Button } from '@bml/ui';
 import { useQuery } from '@tanstack/react-query';
 
 export function HomeScreen() {
-  const { data, status, isFetching } = useQuery<HealthResponse>({
+  const { data, status, isFetching, refetch } = useQuery<HealthResponse>({
     queryKey: ['health'],
     queryFn: async (): Promise<HealthResponse> => {
       const res = await fetch('/api/health');
@@ -24,10 +25,15 @@ export function HomeScreen() {
   }
 
   return (
-    <div>
-      <p>API status: {isFetching ? 'Refreshing...' : <strong>{data.data.status}</strong>}</p>
-      <p>Service: {isFetching ? 'Refreshing...' : data.data.service}</p>
-      <p>Timestamp: {isFetching ? 'Refreshing...' : data.data.timestamp}</p>
+    <div className="flex flex-col gap-4 items-start">
+      <div>
+        <p>API status: {isFetching ? 'Refreshing...' : <strong>{data.data.status}</strong>}</p>
+        <p>Service: {isFetching ? 'Refreshing...' : data.data.service}</p>
+        <p>Timestamp: {isFetching ? 'Refreshing...' : data.data.timestamp}</p>
+      </div>
+      <Button kind="primary" onClick={() => refetch()}>
+        Refetch health
+      </Button>
     </div>
   );
 }
