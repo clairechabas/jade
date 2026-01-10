@@ -9,7 +9,7 @@ describe('GET /health', () => {
 
     const res = await app.inject({
       method: 'GET',
-      url: '/health',
+      url: '/api/health',
     });
 
     expect(res.statusCode).toBe(200);

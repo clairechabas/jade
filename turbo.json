@@ -4,6 +4,6 @@
     "check-types": { "dependsOn": ["^check-types"] },
     "format": { "dependsOn": ["^format"] },
     "lint": { "dependsOn": ["^lint"] },
-    "tests": { "dependsOn": ["^tests"] }
+    "test": { "dependsOn": ["^test"] }
   }
 }

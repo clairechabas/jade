@@ -2,8 +2,7 @@
   "extends": "@bml/typescript-config/node.json",
   "compilerOptions": {
     "noEmit": true,
-    "types": ["node"],
-    "baseUrl": "."
+    "types": ["node"]
   },
   "include": ["src/**/*.ts", "*.ts"],
   "exclude": ["node_modules", "dist", "build", "coverage"]

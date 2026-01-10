@@ -5,3 +5,7 @@ coverage
 .env
 .turbo
 .pnpm-store
+
+# Ignore Playwright test reports
+**/playwright-report
+**/test-results

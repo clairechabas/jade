@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     port: 5173,
+    strictPort: true,
     proxy: {
       // Proxy API calls to the Fastify server in development
       '/api': {

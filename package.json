@@ -10,7 +10,9 @@
     "format:root": "prettier -w .",
     "lint": "turbo run lint --continue",
     "lint:root": "eslint .",
-    "tests": "turbo run tests"
+    "test:unit": "turbo run test --continue",
+    "test:e2e": "node scripts/run-tests-e2e.mjs",
+    "tests": "pnpm run test:unit && pnpm run test:e2e"
   },
   "keywords": [
     "bookmark",

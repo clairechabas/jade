@@ -2,7 +2,7 @@ import { base } from './packages/eslint-config/index.mjs';
 
 export default [
   // Ignore build and output directories
-  { ignores: ['**/dist/**', '**/build/**', '**/coverage/**', '**/.turbo/**'] },
+  { ignores: ['**/dist/**', '**/build/**', '**/coverage/**', '**/.turbo/**', 'scripts/**'] },
   // Apply base config everywhere
   ...base,
 ];
