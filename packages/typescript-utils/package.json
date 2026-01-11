@@ -1,5 +1,5 @@
 {
-  "name": "@bml/typescript-utils",
+  "name": "@jade/typescript-utils",
   "version": "1.0.0",
   "description": "Shared Typescript helpers and utilities.",
   "main": "./src/index.ts",
@@ -19,7 +19,7 @@
   "author": "clairechabas",
   "license": "ISC",
   "devDependencies": {
-    "@bml/eslint-config": "workspace:*",
-    "@bml/typescript-config": "workspace:*"
+    "@jade/eslint-config": "workspace:*",
+    "@jade/typescript-config": "workspace:*"
   }
 }

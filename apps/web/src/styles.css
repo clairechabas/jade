@@ -4,4 +4,4 @@
 @source "./**/*.{ts,tsx,html}";
 @source "../../../packages/ui/src/**/*.{ts,tsx,html}";
 
-@import '@bml/css-config/styles.css';
+@import '@jade/css-config/styles.css';

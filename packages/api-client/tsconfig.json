@@ -1,5 +1,5 @@
 {
-  "extends": "@bml/typescript-config/base.json",
+  "extends": "@jade/typescript-config/base.json",
   "compilerOptions": {
     "noEmit": true
   },

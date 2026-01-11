@@ -1,8 +1,7 @@
 {
-  "name": "bookmark-library",
+  "name": "jade",
   "version": "1.0.0",
-  "description": "An application to store and organize your favorite web links.",
-  "main": "index.js",
+  "description": "The first stone for joyful builders.",
   "private": true,
   "scripts": {
     "check-types": "turbo run check-types",
@@ -17,13 +16,13 @@
     "tests": "pnpm run test:unit && pnpm run test:e2e"
   },
   "keywords": [
-    "bookmark",
-    "bookmark-manager",
-    "links",
-    "links-library",
-    "browser-tabs",
-    "browser-windows",
-    "browser"
+    "starter",
+    "monorepo",
+    "turbo",
+    "typescript",
+    "react",
+    "node",
+    "foundation"
   ],
   "author": "clairechabas",
   "license": "ISC",

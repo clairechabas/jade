@@ -1,5 +1,5 @@
 import Fastify from 'fastify';
-import { HealthResponseSchema } from '@bml/api-client';
+import { HealthResponseSchema } from '@jade/api-client';
 
 export function buildApp() {
   const app = Fastify({ logger: true });

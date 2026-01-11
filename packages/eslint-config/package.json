@@ -1,5 +1,5 @@
 {
-  "name": "@bml/eslint-config",
+  "name": "@jade/eslint-config",
   "version": "1.0.0",
   "description": "Shared ESLint configuration for the monorepo.",
   "main": "index.mjs",

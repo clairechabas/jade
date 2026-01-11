@@ -1,5 +1,5 @@
 {
-  "extends": "@bml/typescript-config/react.json",
+  "extends": "@jade/typescript-config/react.json",
   "compilerOptions": {
     "noEmit": true,
     "composite": false

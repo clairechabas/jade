@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { buildApp } from './app';
-import { HealthResponseSchema } from '@bml/api-client';
+import { HealthResponseSchema } from '@jade/api-client';
 
 describe('GET /health', () => {
   it('returns a valid HealthResponse', async () => {

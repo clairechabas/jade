@@ -1,7 +1,7 @@
 {
-  "name": "@bml/api",
+  "name": "@jade/api",
   "version": "1.0.0",
-  "description": "The API powering the Bookmark Library application.",
+  "description": "The API powering the application.",
   "main": "index.ts",
   "scripts": {
     "dev": "tsx watch src/index.ts",
@@ -20,14 +20,14 @@
   "author": "clairechabas",
   "license": "ISC",
   "devDependencies": {
-    "@bml/eslint-config": "workspace:*",
-    "@bml/typescript-config": "workspace:*",
+    "@jade/eslint-config": "workspace:*",
+    "@jade/typescript-config": "workspace:*",
     "@types/node": "^25.0.3",
     "tsx": "^4.21.0",
     "vitest": "^4.0.16"
   },
   "dependencies": {
-    "@bml/api-client": "workspace:*",
+    "@jade/api-client": "workspace:*",
     "fastify": "^5.6.2"
   }
 }

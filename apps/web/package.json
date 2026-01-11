@@ -1,7 +1,7 @@
 {
-  "name": "@bml/web",
+  "name": "@jade/web",
   "version": "1.0.0",
-  "description": "The web frontend application for the Bookmark Library.",
+  "description": "The web frontend application.",
   "main": "index.tsx",
   "type": "module",
   "scripts": {
@@ -23,8 +23,8 @@
   "author": "clairechabas",
   "license": "ISC",
   "devDependencies": {
-    "@bml/eslint-config": "workspace:*",
-    "@bml/typescript-config": "workspace:*",
+    "@jade/eslint-config": "workspace:*",
+    "@jade/typescript-config": "workspace:*",
     "@tailwindcss/vite": "^4.1.18",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
@@ -34,10 +34,10 @@
     "vite": "^7.3.0"
   },
   "dependencies": {
-    "@bml/api-client": "workspace:*",
-    "@bml/css-config": "workspace:*",
-    "@bml/typescript-utils": "workspace:*",
-    "@bml/ui": "workspace:*",
+    "@jade/api-client": "workspace:*",
+    "@jade/css-config": "workspace:*",
+    "@jade/typescript-utils": "workspace:*",
+    "@jade/ui": "workspace:*",
     "@tanstack/react-query": "^5.90.16",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",

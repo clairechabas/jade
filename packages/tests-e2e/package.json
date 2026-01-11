@@ -1,7 +1,7 @@
 {
-  "name": "@bml/tests-e2e",
+  "name": "@jade/tests-e2e",
   "version": "1.0.0",
-  "description": "E2E browser tests for the Bookmark Library application.",
+  "description": "E2E tests to check user flows and critical paths.",
   "private": true,
   "scripts": {
     "check-types": "tsc -p tsconfig.json --noEmit",
@@ -16,8 +16,8 @@
   "author": "clairechabas",
   "license": "ISC",
   "devDependencies": {
-    "@bml/eslint-config": "workspace:*",
-    "@bml/typescript-config": "workspace:*",
+    "@jade/eslint-config": "workspace:*",
+    "@jade/typescript-config": "workspace:*",
     "@playwright/test": "^1.57.0"
   }
 }

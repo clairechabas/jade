@@ -1,3 +1,8 @@
+/**
+ * CSS config & theme
+ * This is a blank slate to define the styles to be shared with your design system (`packages/ui`) and frontend (`apps/web`).
+ * Add your your favorite CSS reset and the CSS variables for your theme of choice.
+ */
 :root {
   --background: 0 0% 100%;
   --foreground: 222.2 84% 4.9%;

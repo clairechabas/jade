@@ -1,7 +1,7 @@
 {
-  "name": "@bml/ui",
+  "name": "@jade/ui",
   "version": "1.0.0",
-  "description": "The design system used to compose the application interface.",
+  "description": "The design system to build the application interface.",
   "type": "module",
   "exports": {
     ".": "./src/index.ts"
@@ -27,8 +27,8 @@
   "author": "clairechabas",
   "license": "ISC",
   "devDependencies": {
-    "@bml/eslint-config": "workspace:*",
-    "@bml/typescript-config": "workspace:*",
+    "@jade/eslint-config": "workspace:*",
+    "@jade/typescript-config": "workspace:*",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/react": "8.6.15",
     "@storybook/react-vite": "^8.6.14",
@@ -43,7 +43,7 @@
     "vite": "^7.3.0"
   },
   "dependencies": {
-    "@bml/css-config": "workspace:*",
+    "@jade/css-config": "workspace:*",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   }

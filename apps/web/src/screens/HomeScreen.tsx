@@ -1,5 +1,5 @@
-import { HealthResponseSchema, type HealthResponse } from '@bml/api-client';
-import { Button } from '@bml/ui';
+import { HealthResponseSchema, type HealthResponse } from '@jade/api-client';
+import { Button } from '@jade/ui';
 import { useQuery } from '@tanstack/react-query';
 
 export function HomeScreen() {

@@ -1,7 +1,7 @@
 {
-  "name": "@bml/css-config",
+  "name": "@jade/css-config",
   "version": "1.0.0",
-  "description": "Shared CSS configuration and theme for the frontend components of the monorepo.",
+  "description": "Shared CSS configuration and theme for the design system and the frontend.",
   "private": true,
   "exports": {
     "./styles.css": "./styles.css"
