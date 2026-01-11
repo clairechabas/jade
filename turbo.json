@@ -3,7 +3,9 @@
   "tasks": {
     "check-types": { "dependsOn": ["^check-types"] },
     "format": { "dependsOn": ["^format"] },
+    "format:check": { "dependsOn": ["^format:check"] },
     "lint": { "dependsOn": ["^lint"] },
+    "lint:check": { "dependsOn": ["^lint:check"] },
     "test": { "dependsOn": ["^test"] }
   }
 }

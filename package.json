@@ -8,8 +8,10 @@
     "check-types": "turbo run check-types",
     "format": "turbo run format --continue",
     "format:root": "prettier -w .",
+    "format:check": "turbo run format:check --continue",
     "lint": "turbo run lint --continue",
-    "lint:root": "eslint .",
+    "lint:root": "eslint . --fix",
+    "lint:check": "turbo run lint:check --continue",
     "test:unit": "turbo run test --continue",
     "test:e2e": "node scripts/run-tests-e2e.mjs",
     "tests": "pnpm run test:unit && pnpm run test:e2e"

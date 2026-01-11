@@ -9,7 +9,9 @@
   "scripts": {
     "check-types": "echo \"(skip typescript-config)\"",
     "format": "prettier -w .",
-    "lint": "echo \"(skip typescript-config)\""
+    "format:check": "prettier --check .",
+    "lint": "echo \"(skip typescript-config)\"",
+    "lint:check": "echo \"(skip typescript-config)\""
   },
   "keywords": [
     "typescript",

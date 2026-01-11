@@ -1,6 +1,6 @@
-import { describe, test, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
-describe('Health check', () => {
+test.describe('Health check', () => {
   test('home screen should load and display health API data', async ({ page }) => {
     await page.goto('/');
     await expect(page.getByRole('heading', { name: /bookmark library/i })).toBeVisible();

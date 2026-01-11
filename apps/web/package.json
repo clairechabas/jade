@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "check-types": "tsc -p tsconfig.json --noEmit",
     "format": "prettier -w .",
-    "lint": "eslint . --fix"
+    "format:check": "prettier --check .",
+    "lint": "eslint . --fix",
+    "lint:check": "eslint ."
   },
   "keywords": [
     "web",

@@ -1,0 +1,87 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# Uncomment to enable remote Turbo caching on Vercel
+# See https://turbo.build/repo/docs/features/remote-caching
+# env:
+#   TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+#   TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-types:
+    name: Typescript (check-types)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup repo (pnpm + Node + deps)
+        uses: ./.github/actions/setup
+
+      - name: Check types
+        run: pnpm check-types
+
+  lint-format:
+    name: Lint & Format
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup repo (pnpm + Node + deps)
+        uses: ./.github/actions/setup
+
+        # Use check scripts for lint & format scripts in CI so they fail if they produce changes.
+      - name: Lint (must be clean)
+        run: pnpm lint:check
+
+      - name: Format (must be clean)
+        run: pnpm format:check
+
+  tests:
+    name: Tests (unit & e2e)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup repo (pnpm + Node + deps)
+        uses: ./.github/actions/setup
+
+      # Cache Playwright browsers to speed up CI
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+
+      - name: Install Playwright browsers + OS dependencies
+        run: pnpm -C packages/tests-e2e exec playwright install --with-deps
+
+      - name: Run tests
+        run: pnpm tests
+
+      # Upload Playwright report/artifacts on failure for debugging
+      - name: Upload Playwright test results (on failure)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-tests-results
+          path: |
+            packages/tests-e2e/test-results
+            packages/tests-e2e/playwright-report
+          if-no-files-found: ignore

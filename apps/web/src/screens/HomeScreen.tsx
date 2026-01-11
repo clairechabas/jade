@@ -17,31 +17,24 @@ export function HomeScreen() {
 
   if (!data.ok) {
     return (
-      <div className="flex flex-col gap-4">
-        <h1>Bookmark Library</h1>
-
-        <div>
-          <p>API error:</p>
-          <pre>{JSON.stringify(data.error, null, 2)}</pre>
-        </div>
+      <div>
+        <p>API error:</p>
+        <pre>{JSON.stringify(data.error, null, 2)}</pre>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col gap-4">
-      <h1>Bookmark Library</h1>
-
-      <div className="flex flex-col gap-4 items-start">
-        <div>
-          <p>API status: {isFetching ? 'Refreshing...' : <strong>{data.data.status}</strong>}</p>
-          <p>Service: {isFetching ? 'Refreshing...' : data.data.service}</p>
-          <p>Timestamp: {isFetching ? 'Refreshing...' : data.data.timestamp}</p>
-        </div>
-        <Button kind="primary" onClick={() => refetch()}>
-          Refetch health
-        </Button>
+    <div className="flex flex-col gap-4 items-start">
+      <div>
+        <p>API status: {isFetching ? 'Refreshing...' : <strong>{data.data.status}</strong>}</p>
+        <p>Service: {isFetching ? 'Refreshing...' : data.data.service}</p>
+        <p>Timestamp: {isFetching ? 'Refreshing...' : data.data.timestamp}</p>
       </div>
+
+      <Button kind="primary" onClick={() => refetch()}>
+        Refetch health
+      </Button>
     </div>
   );
 }
