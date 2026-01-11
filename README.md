@@ -25,6 +25,12 @@ Start the frontend (in a different terminal window):
 pnpm -C apps/web dev
 ```
 
+To run all tests (unit + e2e):
+
+```sh
+pnpm tests
+```
+
 ## What’s included
 
 Jade is a pnpm-powered monorepo built with Turborepo, designed for type-safe, full-stack development.
@@ -54,26 +60,27 @@ It ships with:
 
 ## Project structure
 
-.
+```text
 ├── apps/
-│ ├── api/ # Backend API (Node.js + Fastify)
-│ └── web/ # Frontend app (Vite + React + Tailwind + TanStack Query)
+│   ├── api/                # Backend API (Node.js + Fastify)
+│   └── web/                # Frontend app (Vite + React + Tailwind + TanStack Query)
 │
 ├── packages/
-│ ├── api-client/ # Shared data schemas & API types (API ↔ frontend)
-│ ├── css-config/ # Design tokens & Tailwind theme configuration
-│ ├── ui/ # Design system (React + Tailwind + Storybook)
-│ ├── eslint-config/ # Shared ESLint configuration
-│ ├── typescript-config/ # Shared TypeScript configuration
-│ ├── typescript-utils/ # Reusable TypeScript utilities
-│ └── tests-e2e/ # End-to-end tests (Playwright)
+│   ├── api-client/         # Shared data schemas & API types (API ↔ frontend)
+│   ├── css-config/         # Design tokens & Tailwind theme configuration
+│   ├── ui/                 # Design system (React + Tailwind + Storybook)
+│   ├── eslint-config/      # Shared ESLint configuration
+│   ├── typescript-config/  # Shared TypeScript configuration
+│   ├── typescript-utils/   # Reusable TypeScript utilities
+│   └── tests-e2e/          # End-to-end tests (Playwright)
 │
-├── scripts/ # Utility scripts (e.g. E2E test runner)
-├── .github/ # CI workflows (typecheck, lint, format, tests)
+├── scripts/                # Utility scripts (e.g. E2E test runner)
+├── .github/                # CI workflows (typecheck, lint, format, tests)
 │
 ├── turbo.json
 ├── pnpm-workspace.yaml
 └── package.json
+```
 
 ## Philosophy
 
@@ -86,4 +93,4 @@ The goal is to provide:
 - scalable patterns that don’t fight you later
 - a joyful developer experience from day one
 
-Build once. Build well. Build on jade.
+Hope you'll enjoy building on Jade.
