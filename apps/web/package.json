@@ -21,7 +21,7 @@
     "react"
   ],
   "author": "clairechabas",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@jade/eslint-config": "workspace:*",
     "@jade/typescript-config": "workspace:*",
