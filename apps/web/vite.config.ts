@@ -1,9 +1,25 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
+import pc from 'picocolors';
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  logLevel: 'warn',
+  plugins: [
+    react(),
+    tailwindcss(),
+    {
+      name: 'startup-banner',
+      configureServer(server) {
+        server.httpServer?.once('listening', () => {
+          const address = server.httpServer?.address();
+          if (typeof address === 'object' && address) {
+            console.log(pc.green(`🚀 Web app running at http://localhost:${address.port}`));
+          }
+        });
+      },
+    },
+  ],
   server: {
     port: 5173,
     strictPort: true,
