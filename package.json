@@ -4,6 +4,7 @@
   "description": "The first stone for joyful builders.",
   "private": true,
   "scripts": {
+    "dev": "turbo run dev --parallel --continue",
     "check-types": "turbo run check-types",
     "format": "turbo run format --continue",
     "format:root": "prettier -w .",

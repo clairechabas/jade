@@ -1,6 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
     "check-types": { "dependsOn": ["^check-types"] },
     "format": { "dependsOn": ["^format"] },
     "format:check": { "dependsOn": ["^format:check"] },
